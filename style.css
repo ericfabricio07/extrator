@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-destaque: #ffffffc0;
+    --cor-gradiente-preto: linear-gradient(113deg, rgba(72, 9, 219, 0.5) 0%, rgba(240, 240, 240, 0.5) 44.96%, rgba(22, 91, 122, 0.5) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 21px 18px 21px;
+    background-image: url('img/b8477d5a0069b7ad2f06942f1e8b07d6.jpg'), var(--cor-gradiente-preto);
+    background-size: cover; /* Para que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    width: 65rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--cor-destaque);
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#entrada-de-texto {
+    display: flex;
+    height: 12rem;
+    padding: 1.4rem 2.5rem 2.5rem 2.5rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: 0.625rem;
+    background: #11111100;
+    font-size: 2rem;
+}
+
+#entrada-de-texto::placeholder {
+    color: #ffffffbb;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#botao-palavrachave {
+    display: flex;
+    padding: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: var(--cor-destaque);
+    color: #080808;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#resultado-palavrachave {
+    display: flex;
+    border-radius: 0.625rem;
+    align-self: stretch;
+    color: var(--cor-destaque);
+    font-size: 2.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    max-height: 50vh;
+    overflow: auto;
+}
